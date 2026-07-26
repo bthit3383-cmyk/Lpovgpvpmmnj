@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiuuuEngine Studio - ตัวตึงแห่งเว็บสร้างเกม</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎮 SiuuuEngine Studio</h1>
+        <p>บ้านหลังเดียวจบ ครบเครื่องเรื่องสร้างเกม (Unity & Unreal 5 Hybrid Platform)</p>
+    </header>
+
+    <div class="container">
+        <!-- คลังสคริปต์ 4 รายการ -->
+        <div class="panel">
+            <h2>📦 คลังสคริปต์ระดับตำนาน</h2>
+            <div id="script-list"></div>
+        </div>
+
+        <!-- ข้อมูลระบบ -->
+        <div class="panel">
+            <h2>⚙️ สถานะระบบ & แพลตฟอร์ม</h2>
+            <p><b>อุปกรณ์:</b> <span id="device-type">กำลังตรวจสอบ...</span></p>
+            <p><b>เอนจิ้นที่รองรับ:</b> <span id="engine-support">Unity & Unreal 5</span></p>
+            <p><b>ผู้สร้าง:</b> sommkak siuuu55</p>
+        </div>
+
+        <!-- ตัวแก้ไขโค้ด -->
+        <div class="panel editor-section">
+            <h2>💻 โปรแกรมแก้ไขและรันสคริปต์</h2>
+            <textarea id="code-editor" placeholder="เลือกสคริปต์จากคลังด้านบน..."></textarea>
+            <div class="actions">
+                <button class="btn-run" onclick="runScript()">🚀 ทดสอบรันสคริปต์</button>
+                <button class="btn-copy" onclick="copyCode()">📋 คัดลอกโค้ด</button>
+            </div>
+            <div id="output-box">✨ ผลลัพธ์การทำงานจะแสดงที่นี่...</div>
+        </div>
+    </div>
+
+    <!-- โหลดไฟล์ JavaScript แยกต่างหาก -->
+    <script src="script.js"></script>
+</body>
+</html>
